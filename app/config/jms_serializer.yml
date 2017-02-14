@@ -1,0 +1,7 @@
+# JMSSerializerBundle Configuration.
+jms_serializer:
+    visitors:
+        json:
+            options: [JSON_UNESCAPED_SLASHES, JSON_UNESCAPED_UNICODE]
+    metadata:
+        auto_detection: true

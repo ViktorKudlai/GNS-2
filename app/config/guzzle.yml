@@ -1,0 +1,11 @@
+# GuzzleBundle Configuration.
+guzzle:
+    logging: true
+    clients:
+        api_mlb:
+            base_url: "https://api.fantasydata.net"
+            headers:
+                Ocp-Apim-Subscription-Key: "75de04ce2fec463e96ef6c4ac43844ab"
+            options:
+                headers:
+                    Ocp-Apim-Subscription-Key: "75de04ce2fec463e96ef6c4ac43844ab"

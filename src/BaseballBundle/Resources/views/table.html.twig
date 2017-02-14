@@ -1,0 +1,28 @@
+{% extends '@Baseball/base.html.twig' %}
+
+{% block body %}
+
+    <h1> Baseball matches schedule</h1>
+    <h3>Total - {{ pagination.getTotalItemCount }} matches.</h3>
+
+    <table class="table package-table">
+        <tr>
+            <th>Match datetime</th>
+            <th>Home Team</th>
+            <th>Away Team</th>
+            <th>Stadium Id</th>
+        </tr>
+        {% for match in pagination %}
+            <tr {% if loop.index is odd %}class="color"{% endif %}>
+                <td>{{ match.dateTime | date('Y-m-d H:i') }}</td>
+                <td>{{ match.homeTeam }}</td>
+                <td>{{ match.awayTeam }}</td>
+                <td>{{ match.stadiumId }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <div class="navigation">
+        {{ knp_pagination_render(pagination) }}
+    </div>
+{% endblock %}

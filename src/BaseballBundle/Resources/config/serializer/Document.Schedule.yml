@@ -1,0 +1,24 @@
+BaseballBundle\Document\Schedule:
+    exclusion_policy: NONE
+    properties:
+        gameId:
+            serialized_name: GameID
+            type: integer
+        stadiumId:
+            serialized_name: StadiumID
+            type: integer
+        season:
+            serialized_name: Season
+            type: integer
+        status:
+            serialized_name: Status
+            type: string
+        homeTeam:
+            serialized_name: HomeTeam
+            type: string
+        awayTeam:
+            serialized_name: AwayTeam
+            type: string
+        dateTime:
+            serialized_name: DateTime
+            type: DateTime<'Y-m-d\TH:i:s'>

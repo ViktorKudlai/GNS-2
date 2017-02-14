@@ -1,0 +1,10 @@
+# DoctrineMongoDBBundle Configuration.
+doctrine_mongodb:
+    connections:
+        default:
+            server: "%mongodb_server%"
+            options: {}
+    default_database: mlb
+    document_managers:
+        default:
+            auto_mapping: true

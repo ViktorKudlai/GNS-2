@@ -1,0 +1,9 @@
+BaseballBundle\Document\Schedule:
+    scedule_{1..10}:
+        gameId: <numberBetween(10, 5000)>
+        stadiumId: <numberBetween(10, 5000)>
+        season: <year('now')>
+        status: <word()>
+        homeTeam: <randomElement(['SF','ARI','NYY', 'TB'])>
+        awayTeam: <randomElement(['CHC','STL','BAL', 'TOR'])>
+        dateTime: <year()>

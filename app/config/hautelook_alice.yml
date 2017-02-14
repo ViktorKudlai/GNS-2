@@ -1,0 +1,4 @@
+# AliceBundle Configuration.
+hautelook_alice:
+    locale: en_US
+    seed: 1
